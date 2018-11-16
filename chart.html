@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charts</title>
+</head>
+<body>
+
+        <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                <canvas id="myChart"></canvas>
+            </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    
+    <script>
+    data = {
+        labels: ["2003", "2004", "2005", "2006", "2007", "2008", "2009"],
+        datasets: [
+            {
+                label: "ED visits",
+                data: [0, 10, 5, 2, 20, 30, 45],
+                fill: false,
+                borderColor: "rgb(102,0,153)",
+                lineTension: 0.1
+            }, 
+            {
+                label: "Hospitilizations",
+                data: [5, 14, 3, 6, 10, 20, 35],
+                fill: false,
+                borderColor: "rgb(255,204,0)",
+                lineTension: 0.1
+            }, 
+            {
+                label: "Deaths",
+                data: [5, 14, 3, 6, 10, 20, 35],
+                fill: false,
+                borderColor: "rgb(0,102,51)",
+                lineTension: 0.1
+            }, 
+        ]
+    }
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myLineChart = new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {}
+        });</script>
+</body>
+</html>

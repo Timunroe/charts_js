@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/Users/tim/.local/share/virtualenvs/charts_js-4zIQO5WL/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
+}
