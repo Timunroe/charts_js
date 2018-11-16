@@ -18,7 +18,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     
     <script>
-       var my_data = [
+        var region = "Hamilton"
+        var my_data = {
+           "Ontario": [
             {
                 "Year": "2003",
                 "Population": "12243758",
@@ -169,15 +171,170 @@
                 "Rate of Deaths": "8.9",
                 "Count of Deaths": "1265"
             }
-        ];
+        ],
+        "Hamilton": [
+            {
+                "Year": "2003",
+                "Population": "518751",
+                "Rate of ED visits": "24.1",
+                "Count of ED visits": "125",
+                "Rate of Hospitalizations": "12.9",
+                "Count of Hospitalizations": "67",
+                "Rate of Deaths": null,
+                "Count of Deaths": null
+            },
+            {
+                "Year": "2004",
+                "Population": "520992",
+                "Rate of ED visits": "28.0",
+                "Count of ED visits": "146",
+                "Rate of Hospitalizations": "12.1",
+                "Count of Hospitalizations": "63",
+                "Rate of Deaths": null,
+                "Count of Deaths": null
+            },
+            {
+                "Year": "2005",
+                "Population": "522469",
+                "Rate of ED visits": "18.2",
+                "Count of ED visits": "95",
+                "Rate of Hospitalizations": "12.4",
+                "Count of Hospitalizations": "65",
+                "Rate of Deaths": "5.0",
+                "Count of Deaths": "26"
+            },
+            {
+                "Year": "2006",
+                "Population": "523629",
+                "Rate of ED visits": "19.7",
+                "Count of ED visits": "103",
+                "Rate of Hospitalizations": "9.7",
+                "Count of Hospitalizations": "51",
+                "Rate of Deaths": "4.0",
+                "Count of Deaths": "21"
+            },
+            {
+                "Year": "2007",
+                "Population": "524002",
+                "Rate of ED visits": "24.8",
+                "Count of ED visits": "130",
+                "Rate of Hospitalizations": "11.3",
+                "Count of Hospitalizations": "59",
+                "Rate of Deaths": "4.2",
+                "Count of Deaths": "22"
+            },
+            {
+                "Year": "2008",
+                "Population": "525599",
+                "Rate of ED visits": "26.1",
+                "Count of ED visits": "137",
+                "Rate of Hospitalizations": "16.0",
+                "Count of Hospitalizations": "84",
+                "Rate of Deaths": "4.8",
+                "Count of Deaths": "25"
+            },
+            {
+                "Year": "2009",
+                "Population": "527652",
+                "Rate of ED visits": "29.2",
+                "Count of ED visits": "154",
+                "Rate of Hospitalizations": "17.8",
+                "Count of Hospitalizations": "94",
+                "Rate of Deaths": "6.1",
+                "Count of Deaths": "32"
+            },
+            {
+                "Year": "2010",
+                "Population": "531663",
+                "Rate of ED visits": "27.6",
+                "Count of ED visits": "147",
+                "Rate of Hospitalizations": "15.2",
+                "Count of Hospitalizations": "81",
+                "Rate of Deaths": "7.1",
+                "Count of Deaths": "38"
+            },
+            {
+                "Year": "2011",
+                "Population": "535602",
+                "Rate of ED visits": "25.6",
+                "Count of ED visits": "137",
+                "Rate of Hospitalizations": "17.6",
+                "Count of Hospitalizations": "94",
+                "Rate of Deaths": "7.3",
+                "Count of Deaths": "39"
+            },
+            {
+                "Year": "2012",
+                "Population": "540879",
+                "Rate of ED visits": "31.8",
+                "Count of ED visits": "172",
+                "Rate of Hospitalizations": "21.6",
+                "Count of Hospitalizations": "117",
+                "Rate of Deaths": "6.8",
+                "Count of Deaths": "37"
+            },
+            {
+                "Year": "2013",
+                "Population": "546301",
+                "Rate of ED visits": "33.7",
+                "Count of ED visits": "184",
+                "Rate of Hospitalizations": "22.0",
+                "Count of Hospitalizations": "120",
+                "Rate of Deaths": "7.5",
+                "Count of Deaths": "41"
+            },
+            {
+                "Year": "2014",
+                "Population": "551163",
+                "Rate of ED visits": "39.4",
+                "Count of ED visits": "217",
+                "Rate of Hospitalizations": "23.6",
+                "Count of Hospitalizations": "130",
+                "Rate of Deaths": "6.7",
+                "Count of Deaths": "37"
+            },
+            {
+                "Year": "2015",
+                "Population": "554996",
+                "Rate of ED visits": "44.0",
+                "Count of ED visits": "244",
+                "Rate of Hospitalizations": "25.9",
+                "Count of Hospitalizations": "144",
+                "Rate of Deaths": "8.3",
+                "Count of Deaths": "46"
+            },
+            {
+                "Year": "2016",
+                "Population": "561022",
+                "Rate of ED visits": "52.9",
+                "Count of ED visits": "297",
+                "Rate of Hospitalizations": "24.1",
+                "Count of Hospitalizations": "135",
+                "Rate of Deaths": "9.3",
+                "Count of Deaths": "52"
+            },
+            {
+                "Year": "2017",
+                "Population": "569908",
+                "Rate of ED visits": "87.2",
+                "Count of ED visits": "497",
+                "Rate of Hospitalizations": "25.3",
+                "Count of Hospitalizations": "144",
+                "Rate of Deaths": "15.4",
+                "Count of Deaths": "88"
+            }
+        ],
+       };
         var YEARS = ["2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"];
+        // var Ontario_ED = Array.from(my_data[region], x => x['Rate of ED visits']);
 
     data = {
         labels: YEARS,
         datasets: [
             {
                 label: "ED visits",
-                data: ['15.2', '16.5', '16.7', '17.0', '17.5', '18.7', '22.2', '21.6', '22.1', '23.5', '22.5', '24.5', '26.3', '31.7', '54.6'],
+                data: Array.from(my_data[region], x => x['Rate of ED visits']),
+                // data: ['15.2', '16.5', '16.7', '17.0', '17.5', '18.7', '22.2', '21.6', '22.1', '23.5', '22.5', '24.5', '26.3', '31.7', '54.6'],
                 fill: false,
                 borderColor: "rgb(102,0,153)",
                 backgroundColor: "rgb(102,0,153)",
@@ -185,7 +342,7 @@
             }, 
             {
                 label: "Hospitalizations",
-                data: ['9.7', '10.3', '10.6', '9.7', '9.7', '10.2', '11.2', '10.9', '12.1', '13.2', '12.3', '12.5', '12.6', '13.7', '15.1'],
+                data: Array.from(my_data[region], x => x['Rate of Hospitalizations']),
                 fill: false,
                 borderColor: "rgb(255,204,0)",
                 backgroundColor: "rgb(255,204,0)",
@@ -193,7 +350,7 @@
             }, 
             {
                 label: "Deaths",
-                data: ['3.0', '2.7', '3.5', '3.4', '3.7', '3.8', '4.1', '4.3', '4.2', '4.4', '4.7', '4.9', '5.3', '6.2', '8.9'],
+                data: Array.from(my_data[region], x => x['Rate of Deaths']),
                 fill: false,
                 borderColor: "rgb(0,102,51)",
                 backgroundColor: "rgb(0,102,51)",
@@ -229,7 +386,7 @@
 						},
                         ticks: {
 							// min: 0,
-							max: 60,
+							// max: 60,
 							// forces step size to be 5 units
 							stepSize: 5
 						}
@@ -237,7 +394,7 @@
 				},
 				title: {
 					display: true,
-					text: 'Ontario'
+					text: region,
 				},
                 tooltips: {
                     titleFontSize: 14,
@@ -261,13 +418,13 @@
                         },
                         afterBody: function(tooltipItems, data) {
                             the_index = tooltipItems[0].index
-                            population = my_data[the_index]['Population'].replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                            population = my_data[region][the_index]['Population'].replace(/\B(?=(\d{3})+(?!\d))/g, ",")
                             if (tooltipItems[0].datasetIndex == 0) {
-                                cases = my_data[the_index]['Count of ED visits'].replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                                cases = my_data[region][the_index]['Count of ED visits'].replace(/\B(?=(\d{3})+(?!\d))/g, ",")
                             } else if (tooltipItems[0].datasetIndex == 1) {
-                                cases = my_data[the_index]['Count of Hospitalizations'].replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                                cases = my_data[region][the_index]['Count of Hospitalizations'].replace(/\B(?=(\d{3})+(?!\d))/g, ",")
                             } else {
-                                cases = my_data[the_index]['Count of Deaths'].replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                                cases = my_data[region][the_index]['Count of Deaths'].replace(/\B(?=(\d{3})+(?!\d))/g, ",")
                             }
                             return "Cases: " +  cases + "\r\n" + "Population: " +  population;
                         },

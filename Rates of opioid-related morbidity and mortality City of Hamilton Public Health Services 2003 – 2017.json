@@ -1,0 +1,152 @@
+[
+	{
+		"Year": "2003",
+		"Population": "518751",
+		"Rate of ED visits": "24.1",
+		"Count of ED visits": "125",
+		"Rate of Hospitalizations": "12.9",
+		"Count of Hospitalizations": "67",
+		"Rate of Deaths": "NA",
+		"Count of Deaths": "NA"
+	},
+	{
+		"Year": "2004",
+		"Population": "520992",
+		"Rate of ED visits": "28.0",
+		"Count of ED visits": "146",
+		"Rate of Hospitalizations": "12.1",
+		"Count of Hospitalizations": "63",
+		"Rate of Deaths": "NA",
+		"Count of Deaths": "NA"
+	},
+	{
+		"Year": "2005",
+		"Population": "522469",
+		"Rate of ED visits": "18.2",
+		"Count of ED visits": "95",
+		"Rate of Hospitalizations": "12.4",
+		"Count of Hospitalizations": "65",
+		"Rate of Deaths": "5.0",
+		"Count of Deaths": "26"
+	},
+	{
+		"Year": "2006",
+		"Population": "523629",
+		"Rate of ED visits": "19.7",
+		"Count of ED visits": "103",
+		"Rate of Hospitalizations": "9.7",
+		"Count of Hospitalizations": "51",
+		"Rate of Deaths": "4.0",
+		"Count of Deaths": "21"
+	},
+	{
+		"Year": "2007",
+		"Population": "524002",
+		"Rate of ED visits": "24.8",
+		"Count of ED visits": "130",
+		"Rate of Hospitalizations": "11.3",
+		"Count of Hospitalizations": "59",
+		"Rate of Deaths": "4.2",
+		"Count of Deaths": "22"
+	},
+	{
+		"Year": "2008",
+		"Population": "525599",
+		"Rate of ED visits": "26.1",
+		"Count of ED visits": "137",
+		"Rate of Hospitalizations": "16.0",
+		"Count of Hospitalizations": "84",
+		"Rate of Deaths": "4.8",
+		"Count of Deaths": "25"
+	},
+	{
+		"Year": "2009",
+		"Population": "527652",
+		"Rate of ED visits": "29.2",
+		"Count of ED visits": "154",
+		"Rate of Hospitalizations": "17.8",
+		"Count of Hospitalizations": "94",
+		"Rate of Deaths": "6.1",
+		"Count of Deaths": "32"
+	},
+	{
+		"Year": "2010",
+		"Population": "531663",
+		"Rate of ED visits": "27.6",
+		"Count of ED visits": "147",
+		"Rate of Hospitalizations": "15.2",
+		"Count of Hospitalizations": "81",
+		"Rate of Deaths": "7.1",
+		"Count of Deaths": "38"
+	},
+	{
+		"Year": "2011",
+		"Population": "535602",
+		"Rate of ED visits": "25.6",
+		"Count of ED visits": "137",
+		"Rate of Hospitalizations": "17.6",
+		"Count of Hospitalizations": "94",
+		"Rate of Deaths": "7.3",
+		"Count of Deaths": "39"
+	},
+	{
+		"Year": "2012",
+		"Population": "540879",
+		"Rate of ED visits": "31.8",
+		"Count of ED visits": "172",
+		"Rate of Hospitalizations": "21.6",
+		"Count of Hospitalizations": "117",
+		"Rate of Deaths": "6.8",
+		"Count of Deaths": "37"
+	},
+	{
+		"Year": "2013",
+		"Population": "546301",
+		"Rate of ED visits": "33.7",
+		"Count of ED visits": "184",
+		"Rate of Hospitalizations": "22.0",
+		"Count of Hospitalizations": "120",
+		"Rate of Deaths": "7.5",
+		"Count of Deaths": "41"
+	},
+	{
+		"Year": "2014",
+		"Population": "551163",
+		"Rate of ED visits": "39.4",
+		"Count of ED visits": "217",
+		"Rate of Hospitalizations": "23.6",
+		"Count of Hospitalizations": "130",
+		"Rate of Deaths": "6.7",
+		"Count of Deaths": "37"
+	},
+	{
+		"Year": "2015",
+		"Population": "554996",
+		"Rate of ED visits": "44.0",
+		"Count of ED visits": "244",
+		"Rate of Hospitalizations": "25.9",
+		"Count of Hospitalizations": "144",
+		"Rate of Deaths": "8.3",
+		"Count of Deaths": "46"
+	},
+	{
+		"Year": "2016",
+		"Population": "561022",
+		"Rate of ED visits": "52.9",
+		"Count of ED visits": "297",
+		"Rate of Hospitalizations": "24.1",
+		"Count of Hospitalizations": "135",
+		"Rate of Deaths": "9.3",
+		"Count of Deaths": "52"
+	},
+	{
+		"Year": "2017",
+		"Population": "569908",
+		"Rate of ED visits": "87.2",
+		"Count of ED visits": "497",
+		"Rate of Hospitalizations": "25.3",
+		"Count of Hospitalizations": "144",
+		"Rate of Deaths": "15.4",
+		"Count of Deaths": "88"
+	}
+]
